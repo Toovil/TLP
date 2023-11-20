@@ -8,15 +8,8 @@ def es_primo(num1):
             return False
     return True
 
-<<<<<<< HEAD
-    print(list(filter(lambda elemento: elemento % elemento + 1, list(lista_nums))))
-    
-
-primer_punto(50)
-=======
 def encontrar_primos(max1):
     return list(filter(es_primo, range(2, max1 + 1)))
->>>>>>> 2ff952675b42c76729b3f5521bf94af8e66db8e6
 
 print(encontrar_primos(50))
 
