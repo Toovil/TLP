@@ -6,7 +6,7 @@ def primer_punto(num_final):
     
     lista_nums = range(2, num_final + 1)
 
-    print(list(filter(lambda elemento: elemento in lista_nums, list(lista_nums))))
+    print(list(filter(lambda elemento: elemento % elemento + 1, list(lista_nums))))
     
 
 primer_punto(50)
