@@ -10,7 +10,7 @@ restricciones:
 Los códigos generados constan de: palabra “COD-” seguido de 3 dígitos,
 3 letras y 1 carácter especial
 ej: COD-563ZXZ&. Encuentre todos los posibles códigos y retorna el tamaño de la 
-lista.
+lista."""
 
 
 
@@ -31,14 +31,14 @@ def count_codes():
 
 #Machetazo:
 
-Queremos formar combinaciones de codigos con 3 letras: 7 objetos (7**3), 3 digitos: 5 objetos (5**3) y un especial: 4 objetos (4**1).
+"""Queremos formar combinaciones de codigos con 3 letras: 7 objetos (7**3), 3 digitos: 5 objetos (5**3) y un especial: 4 objetos (4**1).
 
-    Si hacemos combinatoria, la lista tendría que tener (7**3) + (5**3) + (4**1) = 472 elementos
+    Si hacemos combinatoria, la lista tendría que tener (7**3) + (5**3) + (4**1) = 472 elementos"""
     
 
-    """
+ 
 
-#print(count_codes())
+print(count_codes())
 
 print("\n///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n")
 
@@ -46,7 +46,9 @@ print("\n///////////////////////////////////////////////////////////////////////
 
 #Punto #3
 
-data_ = pd.read_csv(r"C:\Users\Juan Tobon\Desktop\TLP\Python\Taller #3\properties.csv")
+
+#Cambiar por tu directorio
+data_ = pd.read_csv(r"/properties.csv")
 
 
 print("1) \n")
