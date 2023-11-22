@@ -23,20 +23,24 @@ print("\n///////////////////////////////////////////////////////////////////////
 
 #print(datos_jugadores)
 
-robos_partidos = [i for i in datos_jugadores["STL"] if i > 1]
+robos_bloqueos = [
+    player for _, player in datos_jugadores.iterrows()
+    if (player['STL'] > 1 and player['BLK'] > 1)
+]
 
-bloqueos_partidos = [j for j in datos_jugadores["BLK"] if j > 1]
-
-datos_jugadores.drop(datos_jugadores["STL"] == robos_partidos )
-
-#print(datos_jugadores[(datos_jugadores["STL"] == robos_partidos) & (datos_jugadores["BLK"] == bloqueos_partidos)])
+print([i['Player'] for i in robos_bloqueos])
 
 
-print("\n///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n")"""
+print("\n///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n")
 
 #4. Encontrar cual es el porcentaje de canastas de 3 puntos (3P%) se hacen en la liga.
 
-print(datos_jugadores)
+print(round(100 * datos_jugadores['3P%'].mean()))
 
+print("\n///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n")
+
+#5.  Encontrar que jugadores estuvieron en 2 equipos o mas en una sola temporada.
+
+print(datos_jugadores[datos_jugadores["Player"].duplicated()])
 
 
