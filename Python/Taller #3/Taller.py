@@ -19,12 +19,18 @@ def count_codes():
 
     list_codes = []
 
-    for i in list_digits:
-        for j in list_letters:
-            for k in list_specials:
+    for letters in list_digits:
+        for digits in list_letters:
+            for specials in list_specials:
                 list_codes.append("COD-" + str(random.sample(list_digits, 3)) + str(random.sample(list_letters, 3)) + str(random.choice(list_specials)))
-    
-    return list_codes
+    return " ".join(list_codes) + "\n\n" + str(len(list_codes)) # Da un tamaño de lista de 140, está mal.
+
+#Machetazo:
+
+""" Queremos formar combinaciones de codigos con 3 letras: 7 objetos (7**3), 3 digitos: 5 objetos (5**3) y un especial: 4 objetos (4**1).
+
+    Si hacemos combinatoria, la lista tendría que tener (7**3) + (5**3) + (4**1) = 472 elementos
+    """
 
     
 
