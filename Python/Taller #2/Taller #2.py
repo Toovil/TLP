@@ -1,7 +1,7 @@
 import pandas as pd
-datos_jugadores = pd.read_csv("NBA_2024_per_game.csv", sep=",")
+datos_jugadores = pd.read_csv("C:\Users\Juan Tobon\Desktop\TLP\Python\NBA_2024_per_game.csv", sep=",")
 
-"""#1. Encontrar el jugador que mas tiempo haya jugado en la temporada.
+#1. Encontrar el jugador que mas tiempo haya jugado en la temporada.
 
 
 max_tiempo = []
