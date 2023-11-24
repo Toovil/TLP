@@ -25,8 +25,7 @@ def count_codes():
     for letters in list_digits:
         for digits in list_letters:
             for specials in list_specials:
-                list_codes.append("COD-" + str(random.sample(list_digits, 3)) + str(random.sample(list_letters, 3)) + str(random.choice(list_specials)))
-    
+                list_codes.append("COD-" """continuar""")
     return " ".join(list_codes) + "\n\n" + str(len(list_codes)) # Da un tamaño de lista de 140, está mal.
 
 #Machetazo:
