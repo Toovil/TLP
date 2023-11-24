@@ -26,7 +26,7 @@ def count_codes():
         for digits in list_letters:
             for specials in list_specials:
                 list_codes.append("COD-" """continuar""")
-    return " ".join(list_codes) + "\n\n" + str(len(list_codes)) # Da un tamaño de lista de 140, está mal.
+    return " ".join(list_codes) + "\n\n" + str(len(list_codes)) 
 
 #Machetazo:
 
