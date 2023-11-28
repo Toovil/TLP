@@ -133,8 +133,9 @@ class TestPersonaje(unittest.TestCase):
 
 print("\nPunto #3\n\n")
 
-#Cambiar por tu directorio
-data_ = pd.read_csv(r"C:\Users\Juan Tobon\Desktop\TLP\Python\Taller #3\properties.csv")
+# asegurese de tener el archivo en 'properties.csv' en este directorio
+data_ = pd.read_csv(r"properties.csv")
+
 
 print("1)\n")
 
